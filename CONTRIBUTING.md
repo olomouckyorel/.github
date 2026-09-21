@@ -16,6 +16,11 @@ GitHub je společný zdroj pravdy pro rozpracovanou i dokončenou práci. Tato p
 - Další změny posílej do stejné větve a stejného Pull Requestu.
 - Poznámky a budoucí nápady ukládej jako GitHub Issue.
 
+## Běžné pokyny vlastníka
+
+- **„Ulož to jako rozpracované.“** Znamená: udělej commit, pushni stejnou pracovní větev, vytvoř nebo aktualizuj Draft Pull Request a doplň předávací shrnutí. Pull Request neoznačuj jako připravený a nemerguj ho.
+- **„Připrav to k začlenění.“** Znamená: dokonči dohodnutý rozsah, proveď přiměřené kontroly, udělej commit, pushni pracovní větev, vytvoř nebo aktualizuj Pull Request připravený ke kontrole a doplň konečné shrnutí. Pull Request nemerguj.
+
 ## Předání práce dalšímu agentovi
 
 Každý Pull Request, včetně Draft PR, musí obsahovat stručné a průběžně aktualizované shrnutí:
