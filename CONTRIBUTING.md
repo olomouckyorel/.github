@@ -18,12 +18,20 @@ GitHub je společný zdroj pravdy pro rozpracovanou i dokončenou práci. Tato p
 
 ## Běžné pokyny vlastníka
 
-- **„Ulož to jako rozpracované.“** Znamená: udělej commit, pushni stejnou pracovní větev, vytvoř nebo aktualizuj Draft Pull Request a doplň předávací shrnutí. Pull Request neoznačuj jako připravený a nemerguj ho.
-- **„Připrav to k začlenění.“** Znamená: dokonči dohodnutý rozsah, proveď přiměřené kontroly, udělej commit, pushni pracovní větev, vytvoř nebo aktualizuj Pull Request připravený ke kontrole a doplň konečné shrnutí. Pull Request nemerguj.
+- **„Ulož to jako rozpracované.“** Znamená: udělej commit, pushni stejnou pracovní větev, vytvoř nebo aktualizuj Draft Pull Request a doplň popis Pull Requestu. Pull Request neoznačuj jako připravený a nemerguj ho.
+- **„Připrav to k začlenění.“** Znamená: dokonči dohodnutý rozsah, proveď přiměřené kontroly, udělej commit, pushni pracovní větev, vytvoř nebo aktualizuj Pull Request připravený ke kontrole a doplň popis Pull Requestu. Pull Request nemerguj.
 
-## Předání práce dalšímu agentovi
+## Popis Pull Requestu
 
-Každý Pull Request, včetně Draft PR, musí obsahovat stručné a průběžně aktualizované shrnutí:
+Každý Pull Request, včetně Draft PR, má popis o dvou částech. Nahoře je shrnutí pro člověka, dole předávací shrnutí pro dalšího agenta.
+
+### Pro člověka
+
+Dvě až čtyři věty v běžné řeči: co se mění, proč a co má kontrolující člověk udělat. Bez názvů větví, hashů commitů, výstupů skriptů a zkratek. Kdo přečte jen tuto část, musí vědět, o co jde.
+
+### Pro agenta
+
+Stručné a průběžně aktualizované předávací shrnutí. Sem patří technické detaily (větev, commity, cesty k souborům, výsledky kontrol):
 
 - **Cíl:** Co se řeší a proč.
 - **Hotovo:** Co už bylo provedeno.
@@ -32,7 +40,7 @@ Každý Pull Request, včetně Draft PR, musí obsahovat stručné a průběžn�
 - **Další krok:** Kde a jak má pokračovat další agent.
 - **Rizika a blokery:** Známé problémy, nejistoty nebo potřebná rozhodnutí.
 
-Před ukončením práce agent toto shrnutí aktualizuje podle skutečného stavu. Nesmí tvrdit, že je něco hotové nebo ověřené, pokud pro to nemá důkaz.
+Před ukončením práce agent obě části aktualizuje podle skutečného stavu. Nesmí tvrdit, že je něco hotové nebo ověřené, pokud pro to nemá důkaz.
 
 ## Bezpečnost a schválení
 
