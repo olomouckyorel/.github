@@ -6,4 +6,3 @@
 - Změnu společné dohody promítni konzistentně do CONTRIBUTING.md, společného bloku šablony a případně PR šablony; zvyš verzi společného bloku při změně jeho obsahu.
 - Před předáním zkontroluj diff, relativní odkazy a git diff --check. Tento dokumentační repozitář nemá testovací aplikaci.
 - Aktuální použití šablony a aktualizace kopií popisuje [README.md](README.md).
-

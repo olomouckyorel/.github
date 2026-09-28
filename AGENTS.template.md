@@ -42,4 +42,3 @@
 - Backlog a projektové předávání práce:
 
 <!-- Při kopírování uveď permalink tohoto vzoru v použitém commitu. -->
-

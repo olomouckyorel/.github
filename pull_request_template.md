@@ -10,4 +10,3 @@
 - **Zbývá:**
 - **Další krok:**
 - **Rizika a blokery:** <!-- Odchylky, neověřené předpoklady a potřebná rozhodnutí. -->
-
