@@ -1,55 +1,27 @@
 # Pravidla spolupráce
 
-GitHub je společný zdroj pravdy pro rozpracovanou i dokončenou práci. Tato pravidla platí pro lidi i automatizované agenty.
+GitHub uchovává stav rozpracované i dokončené práce. Konkrétní zadání určuje rozsah a schválení; konzultace ani audit samy nepovolují implementaci či publikování.
 
-## Před zahájením práce
+## Pravidla pro agenty
 
-1. Zkontroluj otevřené Pull Requesty včetně Draft PR.
-2. Pokud už existuje Pull Request pro stejný úkol, pokračuj v jeho větvi. Nevytvářej souběžnou kopii stejné práce.
-3. Jinak vytvoř novou větev z aktuální výchozí větve na GitHubu (`main`, případně `master`).
-4. Zachovej všechny nesouvisející změny a používej oddělené pracovní prostředí.
+Jediným zdrojem společného agentního jádra je [AGENTS.template.md](AGENTS.template.md). Projekt je přebírá do svého AGENTS.md a doplňuje místní postupy. Jádro obsahuje hranice oprávnění, řešení konfliktů, ochranu secrets, izolaci práce a ověřování. Tato lidská dohoda je neopakuje jako druhou úplnou kopii; postup zavedení a aktualizace je v [README](README.md).
 
-## Uložení práce
+Merge provádí vlastník nebo určený lidský správce. Agent nikdy nemerguje a textová pravidla nenahrazují technická oprávnění a ochrany větví. Autor commitu ani další token téhož účtu samy neprokazují oddělenou identitu.
 
-- Rozpracovaná práce: commit, push a Draft Pull Request.
-- Hotová práce: commit, push a Pull Request připravený ke kontrole.
-- Další změny posílej do stejné větve a stejného Pull Requestu.
-- Poznámky a budoucí nápady ukládej jako GitHub Issue.
+## Zadání a předání
 
-## Běžné pokyny vlastníka
-
-- **„Ulož to jako rozpracované.“** Znamená: udělej commit, pushni stejnou pracovní větev, vytvoř nebo aktualizuj Draft Pull Request a doplň popis Pull Requestu. Pull Request neoznačuj jako připravený a nemerguj ho.
-- **„Připrav to k začlenění.“** Znamená: dokonči dohodnutý rozsah, proveď přiměřené kontroly, udělej commit, pushni pracovní větev, vytvoř nebo aktualizuj Pull Request připravený ke kontrole a doplň popis Pull Requestu. Pull Request nemerguj.
+- Jeden výsledek má jednu aktivní větev/PR a jednoho vlastníka zápisu. Navazující práce pokračuje v existujícím PR; po merge začíná nový úkol z aktuální výchozí větve.
+- **„Ulož to jako rozpracované.“** Commit, push a vytvoření či aktualizace Draft PR včetně popisu. Neoznačovat jako ready a nemergovat.
+- **„Připrav to k začlenění.“** Dokončit dohodnutý rozsah, ověřit jej, commitnout, pushnout a připravit PR ke kontrole včetně popisu. Nemergovat. Výslovný pokyn ponechat draft platí do odvolání.
+- Stav práce a důležitá diagnostická zjištění patří do existujícího PR/Issue. Skutečný backlog eviduj v dohodnutém systému; každý nápad nepotřebuje Issue.
 
 ## Popis Pull Requestu
 
-Každý Pull Request, včetně Draft PR, má popis o dvou částech. Nahoře je shrnutí pro člověka, dole předávací shrnutí pro dalšího agenta.
+Použij [šablonu](pull_request_template.md) i při vytvoření přes API či CLI. Platí také pro draft.
 
-### Pro člověka
+- **Pro člověka:** Dvě až čtyři věty: co se mění, proč a co má člověk zkontrolovat či rozhodnout. Tato část musí sama vysvětlit smysl změny; nepotřebuje hashe ani výpisy skriptů.
+- **Pro agenta:** Cíl, hotovo, aktuální stav a vlastník zápisu, větev a ověřený commit, draft/ready, skutečně provedené kontroly, zbývající práce, další krok, rizika a potřebná rozhodnutí.
 
-Dvě až čtyři věty v běžné řeči: co se mění, proč a co má kontrolující člověk udělat. Bez názvů větví, hashů commitů, výstupů skriptů a zkratek. Kdo přečte jen tuto část, musí vědět, o co jde.
+Před předáním aktualizuj obě části podle skutečného stavu. Rozliš fakta, hypotézy a neověřené části; nálezy z review rozděl na blokující a doporučení a dolož jejich dopad.
 
-### Pro agenta
-
-Stručné a průběžně aktualizované předávací shrnutí. Sem patří technické detaily (větev, commity, cesty k souborům, výsledky kontrol):
-
-- **Cíl:** Co se řeší a proč.
-- **Hotovo:** Co už bylo provedeno.
-- **Aktuální stav:** Co funguje, co bylo ověřeno a s jakým výsledkem.
-- **Zbývá:** Co ještě není dokončeno.
-- **Další krok:** Kde a jak má pokračovat další agent.
-- **Rizika a blokery:** Známé problémy, nejistoty nebo potřebná rozhodnutí.
-
-Před ukončením práce agent obě části aktualizuje podle skutečného stavu. Nesmí tvrdit, že je něco hotové nebo ověřené, pokud pro to nemá důkaz.
-
-## Bezpečnost a schválení
-
-- Nikdy nezapisuj přímo do výchozí větve.
-- Nepoužívej force-push ani nepřepisuj historii.
-- Neukládej hesla, API klíče, tokeny ani jiné citlivé údaje.
-- Nemaž větve, repozitáře ani cizí práci bez výslovného pokynu.
-- Před předáním stručně popiš změny a provedené kontroly.
-- Pull Request kontroluje a merguje vlastník účtu.
-- Pokud jsou pokyny nejasné nebo se dostanou do konfliktu, zastav se a požádej o rozhodnutí.
-
-Po mergi GitHub pracovní větev automaticky odstraní.
+Automatické odstranění pracovní větve po merge závisí na nastavení konkrétního repozitáře; tato dohoda je sama nezapíná.
