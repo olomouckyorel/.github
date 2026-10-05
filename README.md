@@ -3,9 +3,18 @@
 Veřejná dohoda a vzory pro repozitáře účtu olomouckyorel.
 
 - [CONTRIBUTING.md](CONTRIBUTING.md): stručná dohoda pro lidské zadání a předání práce.
-- [AGENTS.template.md](AGENTS.template.md): jediný zdroj společného agentního jádra v1.1.0 a vzor projektové části.
+- [AGENTS.template.md](AGENTS.template.md): jediný zdroj společného agentního jádra v1.1.1 a vzor projektové části.
 - [pull_request_template.md](pull_request_template.md): výchozí popis PR „Pro člověka / Pro agenta“.
 - [AGENTS.md](AGENTS.md): pokyny pro úpravy tohoto repozitáře.
+
+## Dvě vrstvy pravidel
+
+| Vrstva | Zdroj | Co určuje |
+| --- | --- | --- |
+| **Repo governance** | SHARED CORE z tohoto repozitáře, přijaté do projektového AGENTS.md, a místní projektová pravidla | Jak libovolný agent pracuje v repozitáři: oprávnění, větve/PR, předávání práce a ověřování. |
+| **Agent orchestration** | Samostatný skill nebo protokol konkrétního projektu | Jak spolu běžící orchestrátor a specialisté komunikují, delegují práci a vracejí výsledky. |
+
+Obě vrstvy mohou být ve stejném projektu. Runtime spolupráce nenahrazuje pravidla práce v repozitáři; agent, který jej upravuje, respektuje také jeho AGENTS.md. Tento veřejný repozitář obsahuje obecnou repo governance, nikoli provozní protokoly konkrétních agentů.
 
 ## Zavedení do projektu
 
