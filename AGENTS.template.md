@@ -1,6 +1,10 @@
 # Pravidla práce v tomto repozitáři
 
-<!-- BEGIN SHARED CORE v1.1.0 -->
+<!-- BEGIN SHARED CORE v1.1.1 -->
+## Účel pravidel
+
+Tento společný blok určuje pravidla práce libovolného agenta v repozitáři (**repo governance**): oprávnění, větve a PR, předávání rozpracované práce a ověřování. Platí pro Codex, Grokbot, OpenClaw i další agenty, pokud jej projekt přijal do svého AGENTS.md. Runtime spolupráci orchestrátora a specialistů (**agent orchestration**) může projekt popsat samostatným skillem nebo protokolem; při práci v repozitáři agent respektuje zároveň jeho AGENTS.md. Runtime protokol tato pravidla nenahrazuje ani nerozšiřuje oprávnění.
+
 ## Rozsah a hranice
 - Dodržuj zadání a již udělená schválení. Konzultace nebo audit samy nepovolují implementaci ani publikování.
 - V povoleném rozsahu pracuj samostatně. Při zásadní nejasnosti zastav jen závislou část a pokračuj v ostatní práci.
